@@ -13,3 +13,24 @@
         Save
     </button>
 </form>
+
+<table>
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Email</td>
+            <td>phone</td>
+            <td>operations</td>
+        </tr>
+    </thead>
+
+    <tbody>
+        {%for contact in contacts %}
+            <tr>
+                <td>{{contact.1}}</td>
+                <td>{{contact.2}}</td>
+                <td>{{contact.3}}</td>
+            </tr>
+        {%endfor %}
+    </tbody>
+</table>
